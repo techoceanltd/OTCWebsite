@@ -312,7 +312,7 @@ const channels = [
   title: 'Call Us Directly',
   icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f47920" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.37 2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>`,
   lines: [
-    'UK: +44 7482 742674',
+    'UK: +44 7350 161379',
     'Israel: +972 559 841 750',
     'Nigeria: +234 803 832 3941',
     'Nigeria: +234 907 295 9624',
