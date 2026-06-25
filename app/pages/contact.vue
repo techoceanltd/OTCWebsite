@@ -115,7 +115,7 @@
 
             <!-- Embedded Google Map -->
             <div class="office-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3545014971014!2d3.350877210939376!3d6.602792822208531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b923130c81701%3A0x63e51aa05553958!2s16%20Akin%20Osiyemi%20St%2C%20Allen%2C%20Ikeja%20100001%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1778143390394!5m2!1sen!2sus" 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3545014971014!2d3.350877210939376!3d6.602792822208531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b923130c81701%3A0x63e51aa05553958!2s39%20Akin%20Osiyemi%20St%2C%20Allen%2C%20Ikeja%20100001%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1778143390394!5m2!1sen!2sus" 
                 width="100%"
                 height="260" 
                 style="border:0;" 
@@ -132,7 +132,7 @@
                 </div>
                 <div>
                   <p class="office-info__label">Address</p>
-                  <p class="office-info__value">16, Akin Osiyemi Street,<br />off Allen Avenue, Ikeja,<br />Lagos State, Nigeria</p>
+                  <p class="office-info__value">39, Akin Osiyemi Street,<br />off Allen Avenue, Ikeja,<br />Lagos State, Nigeria</p>
                 </div>
               </div>
               <div class="office-info__item">

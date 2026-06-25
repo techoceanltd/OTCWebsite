@@ -341,10 +341,10 @@ const channels = [
   {
     title: 'Visit Our Office',
     icon: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f47920" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>`,
-    lines: ['16, Akin Osiyemi Street, off Allen Avenue, Ikeja, Lagos', 'Walk-ins welcome during business hours'],
+    lines: ['39, Akin Osiyemi Street, off Allen Avenue, Ikeja, Lagos', 'Walk-ins welcome during business hours'],
     primaryCount: 1,
     cta: 'Get Directions',
-    href: 'https://maps.google.com/?q=16+Akin+Osiyemi+Street+Ikeja+Lagos',
+    href: 'https://maps.google.com/?q=39+Akin+Osiyemi+Street+Ikeja+Lagos',
   },
 ]
 </script>
