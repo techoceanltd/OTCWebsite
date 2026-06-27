@@ -356,14 +356,14 @@ const testimonials = [
     company: 'CEO, JOE-MARTEC',
   },
     {
-    quote: '"I run a physical store and ship to customers all over Nigeria daily. OTC handles my last-mile deliveries and I have never had to deal with a customer complaint about delivery timing or condition. The packages arrive right, the drivers are professional, and someone always picks up when I call."',
-    name: 'Chibuike Emeniru',
-    company: 'CEO, JOE-MARTEC',
+    quote: '"OTC  courier&Logistics has been a dependable partner in handling our oil supply and distribution needs. From engine oils to brake fluids and lubricants, their delivery process is always timely, professional, and well-coordinated. Their reliability has helped us maintain smooth operations and meet customer demands consistently"',
+    name: 'Immachukwu',
+    company: 'Automotive Oil Distributor,Divine Visitation Limited',
   },
     {
-    quote: '"I run a physical store and ship to customers all over Nigeria daily. OTC handles my last-mile deliveries and I have never had to deal with a customer complaint about delivery timing or condition. The packages arrive right, the drivers are professional, and someone always picks up when I call."',
-    name: 'Chibuike Emeniru',
-    company: 'CEO, JOE-MARTEC',
+    quote: '"We have worked with several logistics companies, and OTC is the first to communicate proactively. When there was a delay on one of our items, they called us before we even knew there was a problem. That level of professionalism is genuinely rare in this industry."',
+    name: 'Lawrence Jude',
+    company: 'Director, Intellect Hub',
   },
 ]
 </script>
