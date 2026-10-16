@@ -200,6 +200,12 @@
 <script setup>
 import { ref, reactive } from 'vue'
 
+// Hero is a CSS background, so preload it to start the download before CSS is parsed
+useHead({
+  link: [{ rel: 'preload', as: 'image', href: '/images/otc-contact.webp', fetchpriority: 'high' }]
+})
+
+
 useHead({
   title: 'Contact Us — OTC Logistics',
   meta: [{ name: 'description', content: 'Get in touch with OTC Courier & Logistics. Call, WhatsApp, email, or visit our office in Ikeja, Lagos.' }],
@@ -273,7 +279,7 @@ const faqs = [
   { q: 'What should i do when my package is delayed?',
     a: 'First, check the tracking page for an updated delivery window. If the delay is unexpected or there is no update, contact our team directly — we monitor all shipments and can provide immediate clarity on the situation.' },
   { q: 'How do i contact you?',
-    a: 'You can reach us by phone (+234 803 832 3941), WhatsApp (+234 814 051 2369), email (support@otccourierlogistics.com), or by visiting our office in Ikeja, Lagos. All channels are monitored Monday to Saturday, 8am–6pm.' },
+    a: 'You can reach us by phone (+234 803 832 3941), WhatsApp (+234 813 700 1203), email (support@otccourierlogistics.com), or by visiting our office in Ikeja, Lagos. All channels are monitored Monday to Saturday, 8am–6pm.' },
 ]
 </script>
 
@@ -319,7 +325,7 @@ const faqs = [
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('/images/otc-contact.png');
+  background-image: url('/images/otc-contact.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

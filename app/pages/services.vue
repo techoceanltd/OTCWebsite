@@ -3,7 +3,7 @@
 
     <section class="hero card">
       <div class="hero__img-wrap">
-          <img src="/images/otc-hub.png" alt="OTC Logistics Hub" class="hero__img" loading="lazy" />
+          <NuxtImg src="/images/otc-hub.webp" alt="OTC Logistics Hub" class="hero__img" width="2400" height="1400" sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw" fetchpriority="high" loading="eager" />
           <div class="hero__text">
             <h1 class="hero__heading">
               One Partner.<br />
@@ -30,7 +30,7 @@
 
     <section v-for="(service, index) in services" :key="index" class="service card">
       <div class="service__img-wrap">
-        <img :src="service.image" :alt="service.alt" class="service__img" loading="lazy" />
+        <NuxtImg :src="service.image" :alt="service.alt" class="service__img" width="1200" height="1254" sizes="xs:100vw md:50vw lg:600px" loading="lazy" />
       </div>
       <div class="service__content">
         <h2 class="service__title">{{ service.title }}</h2>
@@ -66,7 +66,7 @@ const intro = ref({
 // Services Array
 const services = ref([
   {
-    image: '/images/service1.png',
+    image: '/images/service1.webp',
     alt: 'Haulage and Courier',
     title: 'HAULAGE & COURIER SERVICES',
     description: 'We provide reliable and efficient delivery solutions for both parcels and large cargo. From express shipments to scheduled deliveries, our services are designed to ensure safe handling, timely arrival, and complete peace of mind for every client.',
@@ -85,7 +85,7 @@ const services = ref([
     ]
   },
   {
-    image: '/images/service2.png',
+    image: '/images/service2.webp',
     alt: 'Oil and Gas Supply',
     title: 'OIL & GAS SUPPLY',
     description: 'We support industrial and commercial operations with the timely delivery of essential petroleum products, including diesel, petrol, and kerosene. Our focus on safety, quality, and consistency ensures an uninterrupted energy supply for your business.',
@@ -119,7 +119,7 @@ const services = ref([
     ]
   },
   {
-    image: '/images/service3.png',
+    image: '/images/service3.webp',
         alt: 'Agro Supplies',
     title: 'AGRO SUPPLIES',
     description: 'We source and distribute high-quality agricultural products to support businesses across the agro value chain. Our reliable logistics network ensures timely delivery and consistent supply to meet your operational needs.',
@@ -155,7 +155,7 @@ const services = ref([
   },
 
   {
-    image: '/images/service4.png',
+    image: '/images/service4.webp',
     alt: 'Supply Chain Service',
     title: 'SUPPLY CHAIN SERVICE',
     description: 'Our supply chain solutions are designed to streamline operations, improve coordination, and reduce delays. We help businesses manage the movement of goods efficiently from sourcing to final delivery.',
@@ -178,7 +178,7 @@ const services = ref([
   },
 
   {
-    image: '/images/service5.png',
+    image: '/images/service5.webp',
     alt: 'Blockchain Logistics',
     title: 'BLOCKCHAIN LOGISTICS SERVICE',
     description: 'We integrate modern technology into logistics operations to enhance transparency and accountability. Our blockchain-enabled solutions improve traceability and build trust across the supply chain.',
@@ -212,7 +212,7 @@ const services = ref([
 
 
   {
-    image: '/images/service6.png',
+    image: '/images/service6.webp',
     alt: 'Cold Chain Service',
     title: 'COLD CHAIN SERVICE',
     description: 'We provide temperature-controlled logistics for perishable and sensitive goods. Our systems ensure that products are stored and transported under the right conditions, maintaining quality from origin to destination.',
@@ -250,7 +250,7 @@ const services = ref([
     ]
   },
   {
-    image: '/images/service7.png',
+    image: '/images/service7.webp',
     alt: 'Manufacturing Logistics',
     title: 'MANUFACTURING LOGISTICS',
     description: 'We support manufacturing operations with the efficient movement of raw materials and finished goods. Our services are tailored to reduce downtime and keep production processes running smoothly.',
@@ -286,7 +286,7 @@ const services = ref([
   },
 
   {
-    image: '/images/service8.png',
+    image: '/images/service8.webp',
     alt: 'Procurement Logistics',
     title: 'PROCUREMENT LOGISTICS',
     description: 'We handle the sourcing, coordination, and delivery of essential goods for businesses. Our procurement logistics services ensure timely availability of resources, helping you maintain consistent operations without disruption.',

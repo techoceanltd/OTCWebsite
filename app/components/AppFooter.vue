@@ -18,8 +18,8 @@
         <!-- Column 1: Brand -->
         <div class="footer__col footer__col--brand">
           <NuxtLink to="/" class="footer__logo">
-            <img 
-              src="/images/otc-logistics-logo.png" 
+            <NuxtImg 
+              src="/images/otc-logistics-logo.webp"
               alt="OTC Logistics Logo" 
               class="navbar__logo-img"
               loading="lazy"
@@ -136,7 +136,7 @@ const contactInfo = [
   },
   {
     label: 'WhatsApp',
-    value: 'WhatsApp: +234 814 051 2369',
+    value: 'WhatsApp: +234 813 700 1203',
     icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f47920" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>`,
   },
   {
@@ -199,7 +199,7 @@ const socials = [
 
 /* ─── CTA Banner ─────────────────────────────────────── */
 .footer__cta {
-  background: url('/images/orange-arrow.png') no-repeat center center;
+  background: url('/images/orange-arrow.webp') no-repeat center center;
   background-size: cover;
   position: relative;
   overflow: hidden;

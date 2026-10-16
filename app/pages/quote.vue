@@ -238,6 +238,12 @@
 <script setup>
 import { ref, reactive, computed } from 'vue'
 
+// Hero is a CSS background, so preload it to start the download before CSS is parsed
+useHead({
+  link: [{ rel: 'preload', as: 'image', href: '/images/otc-quote.webp', fetchpriority: 'high' }]
+})
+
+
 useHead({
   title: 'Get a Quote — OTC Logistics',
   meta: [{ name: 'description', content: 'Request a personalised logistics quote from OTC Courier & Logistics.' }],
@@ -328,7 +334,7 @@ const channels = [
     lines: ['+234 814 051 2369', 'Fastest response for urgent enquiries'],
     primaryCount: 1,
     cta: 'Open WhatsApp Chat',
-    href: 'https://wa.me/2348140512369',
+    href: 'https://wa.me/2348137001203',
   },
   {
     title: 'Send an Email',
@@ -390,7 +396,7 @@ const channels = [
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('/images/otc-quote.png');
+  background-image: url('/images/otc-quote.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

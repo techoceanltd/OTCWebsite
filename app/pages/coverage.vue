@@ -48,8 +48,9 @@
 
           <!-- 1. Map card -->
           <div class="map-card">
-            <img
-              src="/images/nigeria-map.png"
+            <NuxtImg
+              src="/images/nigeria-map.webp"
+              sizes="xs:100vw md:50vw lg:600px"
               alt="Map of Nigeria showing all 36 states and the FCT"
               class="map-card__img"
               loading="lazy"
@@ -85,6 +86,11 @@
 </template>
 
 <script setup>
+// Hero is a CSS background, so preload it to start the download before CSS is parsed
+useHead({
+  link: [{ rel: 'preload', as: 'image', href: '/images/otc-coverage.webp', fetchpriority: 'high' }]
+})
+
 useHead({
   title: 'Coverage — OTC Logistics',
   meta: [{ name: 'description', content: 'OTC Logistics covers all 36 states and the FCT across Nigeria and Africa. Nationwide logistics you can count on.' }],
@@ -142,7 +148,7 @@ const nigerianStates = [
 .hero__bg {
   position: absolute;
   inset: 0;
-  background-image: url('/images/otc-coverage.png');
+  background-image: url('/images/otc-coverage.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -291,7 +297,7 @@ const nigerianStates = [
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(0,0,0,0.05);
-  background-image: url('/images/state-text.png');
+  background-image: url('/images/state-text.webp');
   background-size: cover;
   background-position: center;
 }

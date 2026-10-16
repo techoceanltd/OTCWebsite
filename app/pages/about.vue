@@ -122,7 +122,7 @@
           <div class="values__grid">
             <div v-for="val in coreValues" :key="val.name" class="val-card">
               <div class="val-card__img">
-                <img :src="`/images/${val.img}`" :alt="val.name" class="val-card__bg" loading="lazy"/>
+                <NuxtImg :src="`/images/${val.img}`" :alt="val.name" class="val-card__bg" width="862" height="900" sizes="xs:100vw sm:50vw lg:400px" loading="lazy" />
                 <!-- Name pill — top left (same as before) -->
                 <span class="val-card__label">{{ val.name }}</span>
                 <!-- Description overlay — bottom, same position as label -->
@@ -140,7 +140,7 @@
     <!-- ══ HERO 2: Born Out of Frustration ════════════════════ -->
     <section class="hero--story card">
       <div class="hero__wrap">
-        <img src="/images/history.png" class="hero__img" loading="lazy" />
+        <NuxtImg src="/images/history.webp" alt="" class="hero__img" width="2400" height="1538" sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw" loading="lazy" />
         <div class="hero__bg hero__bg--warehouse">
           <div class="hero__overlay hero__overlay--heavy"></div>
         </div>
@@ -166,6 +166,11 @@
 </template>
 
 <script setup>
+// Hero is a CSS background, so preload it to start the download before CSS is parsed
+useHead({
+  link: [{ rel: 'preload', as: 'image', href: '/images/otc-quote.webp', fetchpriority: 'high' }]
+})
+
 useHead({
   title: 'About Us — OTC Logistics',
   meta: [{ name: 'description', content: 'Learn about OTC Courier & Logistics — our story, mission, vision and the six values that drive everything we do.' }],
@@ -189,37 +194,37 @@ const glanceValues = [
 const coreValues = [
   {
     name: 'Reliability',
-    img: 'reliability.png',
+    img: 'reliability.webp',
     icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f47920" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>`,
     desc: 'A promise made is a promise kept. We do not commit to timelines we cannot honour, and when we say something will happen, our clients set their calendars by it. Reliability is not a department in this company; it is everyone\'s job.',
   },
   {
     name: 'Transparency',
-    img: 'transparency.png',
+    img: 'transparency.webp',
     icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f47920" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`,
     desc: 'No hidden costs, no vague updates, no "it will get there soon." You have a right to know exactly what is happening with your shipment, your invoice, and your account at all times and we build every process around that right.',
   },
   {
     name: 'Client First',
-    img: 'client-first.png',
+    img: 'client-first.webp',
     icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f47920" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
     desc: 'Every decision we make from which routes we run to how we handle delays is made with the client\'s outcome in mind. Your business success is what makes ours possible, and we never forget that for a single day.',
   },
   {
     name: 'Innovation',
-    img: 'innovation.png',
+    img: 'innovation.webp',
     icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f47920" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>`,
     desc: 'The logistics industry is changing fast — blockchain, cold chain technology, real-time tracking, digital documentation. We stay ahead of those changes so our clients benefit from the best modern logistics has to offer.',
   },
   {
     name: 'Safety',
-    img: 'safety.png',
+    img: 'safety.webp',
     icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f47920" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`,
     desc: 'Every driver trained. Every vehicle maintained. Every cargo insured. Safety is not a policy document for us but it is a daily operating principle that protects our team, our clients\' goods, and the communities we move through.',
   },
   {
     name: 'Integrity',
-    img: 'integrity.png',
+    img: 'integrity.webp',
     icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f47920" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>`,
     desc: 'We do what is right, especially when no one is watching. If something goes wrong, we own it immediately and fix it. Our reputation is built on years of honest conduct, and we protect it on every single job.',
   },
@@ -274,14 +279,14 @@ const coreValues = [
 
 /* Truck hero */
 .hero__bg--truck {
-  background-image: url('/images/otc-quote.png');
+  background-image: url('/images/otc-quote.webp');
   background-size: cover;
   background-position: center;
 }
 
 /* Warehouse / story hero */
 /* .hero__bg--warehouse {
-  background-image: url('/images/history.png');
+  background-image: url('/images/history.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -544,7 +549,7 @@ const coreValues = [
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  background-image: url('/images/drives-card.png');
+  background-image: url('/images/drives-card.webp');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 20px;

@@ -3,11 +3,11 @@
     <div class="navbar__inner">
       <!-- Logo -->
       <NuxtLink to="/" class="navbar__logo">
-        <img 
-          src="/images/otc-logistics-logo.png" 
+        <NuxtImg 
+          src="/images/otc-logistics-logo.webp"
           alt="OTC Logistics Logo" 
           class="navbar__logo-img"
-          loading="lazy"
+          loading="eager"
         />
       </NuxtLink>
 

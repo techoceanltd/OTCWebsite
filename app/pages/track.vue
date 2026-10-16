@@ -161,6 +161,12 @@
 <script setup>
 import { ref } from 'vue'
 
+// Hero is a CSS background, so preload it to start the download before CSS is parsed
+useHead({
+  link: [{ rel: 'preload', as: 'image', href: '/images/otc-track.webp', fetchpriority: 'high' }]
+})
+
+
 
 useHead({
   title: 'Track Shipment — OTC Logistics',
@@ -269,7 +275,7 @@ const channels = [
     title: 'Track via WhatsApp',
     desc: 'The fastest way to get a live status update. Send your reference number directly to our WhatsApp number and our operations team will respond with current location, status, and estimated delivery.',
     cta: 'Open WhatsApp Chat',
-    href: 'https://wa.me/2348140512369',
+    href: 'https://wa.me/2348137001203',
   },
   {
     title: 'Track by Phone',
@@ -336,7 +342,7 @@ const notes = [
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/images/otc-track.png'); 
+  background-image: url('/images/otc-track.webp'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

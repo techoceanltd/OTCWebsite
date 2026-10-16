@@ -4,7 +4,7 @@
     <!-- ══ HERO ══════════════════════════════════════════════ -->
     <section class="hero card">
       <div class="hero__wrap">
-        <img src="/images/otc-home.png" alt="OTC Logistics" class="hero__img" loading="lazy" />
+        <NuxtImg src="/images/otc-home.webp" alt="OTC Logistics" class="hero__img" width="2400" height="1400" sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw" fetchpriority="high" loading="eager" />
         <div class="hero__overlay"></div>
         <div class="hero__inner">
           <div class="hero__copy">
@@ -65,7 +65,7 @@
             <NuxtLink to="/about" class="btn-orange">Our Full Story</NuxtLink>
           </div>
           <div class="about__image">
-            <img src="/images/warehouse.png" alt="OTC Warehouse" class="about__img" loading="lazy" />
+            <NuxtImg src="/images/warehouse.webp" alt="OTC Warehouse" class="about__img" width="1200" height="876" sizes="xs:100vw md:50vw lg:600px" loading="lazy" />
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
               class="svc-card"
             >
               <div class="svc-card__img-wrap">
-                <img :src="`/images/${svc.image}`" :alt="svc.name" class="svc-card__img" loading="lazy" />
+                <NuxtImg :src="`/images/${svc.image}`" :alt="svc.name" class="svc-card__img" width="862" height="900" sizes="xs:100vw sm:50vw lg:400px" loading="lazy" />
                 <span class="svc-card__label">{{ svc.name }}</span>
               </div>
               <div class="svc-card__body">
@@ -108,7 +108,7 @@
 
     <!-- ══ STATS BANNER ══════════════════════════════════════ -->
     <section class="stats card">
-      <img src="/images/story.png" alt="" class="stats__img" aria-hidden="true" loading="lazy" />
+      <NuxtImg src="/images/story.webp" alt="" class="stats__img" aria-hidden="true" width="2400" height="1538" sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw" loading="lazy" />
       <div class="stats__overlay"></div>
         <div class="stats__inner">
           <div class="stats__left">
@@ -262,42 +262,42 @@ const trustItems = [
 
 const services = [
   {
-    name: 'Haulage & Courier', slug: 'haulage', image: 'haulage.png',
+    name: 'Haulage & Courier', slug: 'haulage', image: 'haulage.webp',
     desc: "Fast, flexible, and dependable delivery solutions tailored to your needs. Whether it's a single package or large-scale cargo.",
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8zM5.5 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM18.5 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>`,
   },
   {
-    name: 'Oil & Gas Supply', slug: 'oil-gas', image: 'gas-supply.png',
+    name: 'Oil & Gas Supply', slug: 'oil-gas', image: 'gas-supply.webp',
     desc: 'Critical supply chains leave no room for error. We manage procurement, storage, and distribution of petroleum products.',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 1 5 5c0 3-5 11-5 11S7 10 7 7a5 5 0 0 1 5-5z"/><circle cx="12" cy="7" r="2"/></svg>`,
   },
   {
-    name: 'Agro Supplies', slug: 'agro', image: 'agro-supplies.png',
+    name: 'Agro Supplies', slug: 'agro', image: 'agro-supplies.webp',
     desc: "Nigeria's agricultural sector moves at the pace of the season. We match that pace; transporting goods with speed and care.",
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 0 20"/><path d="M12 2C6.48 2 2 6.48 2 12"/><path d="M12 12c-2 2-4 3-6 3"/></svg>`,
   },
   {
-    name: 'Supply Chain Service', slug: 'supply-chain', image: 'chain-supply.png',
+    name: 'Supply Chain Service', slug: 'supply-chain', image: 'chain-supply.webp',
     desc: "We don't just move goods; we manage the entire flow. From supplier coordination to final delivery, we keep it running.",
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>`,
   },
   {
-    name: 'Blockchain Logistics', slug: 'blockchain', image: 'blockchain.png',
+    name: 'Blockchain Logistics', slug: 'blockchain', image: 'blockchain.webp',
     desc: 'Transparency that cannot be faked. Tamper-proof, real-time record of every step your shipment takes in the supply chain.',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`,
   },
   {
-    name: 'Manufacturing Logistics', slug: 'manufacturing', image: 'manufacture.png',
+    name: 'Manufacturing Logistics', slug: 'manufacturing', image: 'manufacture.webp',
     desc: 'We synchronise raw material inbound, in-plant movement coordination, and finished goods distribution efficiently.',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`,
   },
   {
-    name: 'Cold Chain Service', slug: 'cold-chain', image: 'cold-chain.png',
+    name: 'Cold Chain Service', slug: 'cold-chain', image: 'cold-chain.webp',
     desc: 'Our cold chain infrastructure maintains precise temperature control from origin to destination, with continuous monitoring.',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
   },
   {
-    name: 'Procurement Logistics', slug: 'procurement', image: 'procurement.png',
+    name: 'Procurement Logistics', slug: 'procurement', image: 'procurement.webp',
     desc: 'We manage the sourcing, purchasing, and inbound logistics of your materials so you get what you need, at the right cost.',
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>`,
   },
@@ -723,7 +723,7 @@ const testimonials = [
 }
 
 .why__wrap {
-  background: #ffffff url('/images/white-arrow.png') no-repeat center;
+  background: #ffffff url('/images/white-arrow.webp') no-repeat center;
   background-size: 100% auto;
   border-radius: 24px;
   overflow: hidden;
